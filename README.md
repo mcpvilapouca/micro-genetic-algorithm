@@ -1,9 +1,10 @@
 # Micro-genetic-algorithm
 
 Micro-Genetic algorithm for the optimization of constitutive models material parameters
--Runs in matlab, through Main.m
--Requires python3 and abaqus
--to run from the terminal in background use the following command:
+
+&#x1F538; Runs in matlab, through Main.m
+&#x1F538; Requires python3 and abaqus
+&#x1F538; to run from the terminal in background use the following command:
 nohup matlab -r -nosplash -nodesktop -nojvm < Main.m > output.txt &
 
 ## **General explanation:**
@@ -16,7 +17,7 @@ and numerical results from ABAQUS.
 
 ## **Notes on implementation:**
 
-- In the Main.m file it is necessary to change:
+&#x1F538; In the Main.m file it is necessary to change:
     - no. parameters to optimize
     - dimension of the population (tipically 5)
     - no. decimal cases of the parameters
@@ -26,11 +27,11 @@ and numerical results from ABAQUS.
     - elitism option ('y'/'n') --> we recommend using elitism for better results
     - no. of times the micro-genetic algorithm should be run. Usually 1 time is enough.
 
-- In the merit.m file change:
+&#x1F538; In the merit.m file change:
     - name of the file to be run in abaqus
     - name of the user-define subroutine to be applied
 
-- In each folder xr1 through xrn (n=dimension of the population) change:
+&#x1F538; In each folder xr1 through xrn (n=dimension of the population) change:
     - param_orig.inp (to have the parameters of the required model. Note that
        the parameters that need to be changed must be equal to 1.0 ,i.e. C10=1.0, to be consistent
        with the file subs_param.py)
