@@ -1,16 +1,15 @@
 # Micro-genetic-algorithm
 
-Micro-Genetic algorithm for the optimization of constitutive models material parameters
+Micro-Genetic algorithm for the optimization of constitutive models material parameters\n
+It minimizes the least square differences between an experimental curve
+and numerical results from ABAQUS.
 
 - Runs in matlab, through Main.m
 - Requires python3 and abaqus
 - to run from the terminal in background use the following command:
-nohup matlab -r -nosplash -nodesktop -nojvm < Main.m > output.txt &
+\n nohup matlab -r -nosplash -nodesktop -nojvm < Main.m > output.txt &
 
-## **General explanation:**
 
-It minimizes the least square differences between an experimental curve
-and numerical results from ABAQUS.
 
 ## **Results from the example:**
 
