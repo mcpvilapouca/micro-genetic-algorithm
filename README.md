@@ -15,6 +15,23 @@ and numerical results from ABAQUS.
 
 ## **Results from the example:**
 
+The code is currently prepared to fit a stress-stretch experimental curve from an Anterior Cruciate Ligament (ACL).
+Since the behavior is nonlinear, we expected to fit the data with an hyperelastic constitutive model.
+
+We choose the Holzapfel-Gasser-Ogden (HGO) model [1] and included the Generalized Maxwell Model [2] for Viscoelasticity.
+
+The number of material parameters fit is 7:
+C10, K11 and K12 --> HGO model
+BETAM1, TAUM1, BETAM2, TAUM2 --> Generalized Maxwell model
+
+We were able to get the following approximation running the genetic algorithm:
+
+
+![Results_micro_genetic](https://user-images.githubusercontent.com/95075305/170545304-66121241-8013-47e8-95b4-911b5cf242d2.png)
+
+###### [1]: Holzapfel, G.A., Gasser, T.C., Ogden, R.W., 2000. A new constitutive framework for arterial wall mechanics and a comparative study of material models. J. Elast. Phys.Sci. Solids 61, 1–48. https://doi.org/10.1023/A:1010835316564 
+###### [2]: Holzapfel, G.A., Gasser, T.C., 2001. A viscoelastic model for fiber-reinforced composites at finite strains: continuum basis, computational aspects and applications.Comput. Methods Appl. Mech. Eng. 190, 4379–4403. https://doi.org/10.1016/S0045-7825(00)00323-6.
+
 
 ## **Notes on implementation:**
 
