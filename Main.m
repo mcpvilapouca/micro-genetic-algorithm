@@ -18,16 +18,20 @@ addpath([pwd,'/private_functions']);
 %umat: umat_hgo_visco.std-o
 %
 p=2;              %no. decimal points
-nvar=3;           %no. variables to optimize
+nvar=7;           %no. variables to optimize
 npop=5;           %population dimension
-dom1=[0.01,0.1];   %C10    %variable domain
-dom2=[0.01,3];   %K11
-dom3=[0.01,5];   %K12
+dom1=[0.01,1.0];   %C10    %variable domain
+dom2=[0.01,3.0];   %K11
+dom3=[0.01,50];   %K12
+dom4=[0.0,2.0];   %BETA1
+dom5=[0.01,100];   %TAU1
+dom6=[0.0,2];      %BETA2
+dom7=[0.01,1500];   %TAU2
 
 %Random population? h0='no' or h0='yes'
-h0='yes';
-%if h0=no, define initial population
-initialpop=[0.01;2.27;4.37;1.49;1.81;1.07;0.75;1.53];
+h0='no';
+%if h0='no', define initial population
+initialpop=[0.21;2.16;29.69;0.44;78.33;0.1;1234.86];
 
 %how many times the micro-genetic algorithm will be performed
 nloops=1;
@@ -46,11 +50,14 @@ obj='min';
 %Elitism option: 'y'/'n'
 elitismo='y';
 
+%add your domains
+dom=vertcat(dom1,dom2,dom3,dom4,dom5,dom6,dom7);
+
 %**************************************************************************
 %Private Functions*********************************************************
 %**************************************************************************
 %
-dom=vertcat(dom1,dom2,dom3);
+%
 %
 for i=1:nvar
 dim(i,1)=dom(i,2)-dom(i,1);
