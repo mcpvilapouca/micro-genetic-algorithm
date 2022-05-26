@@ -18,11 +18,11 @@ and numerical results from ABAQUS.
 The code is currently prepared to fit a stress-stretch experimental curve from an Anterior Cruciate Ligament (ACL).
 Since the behavior is nonlinear, we expected to fit the data with an hyperelastic constitutive model.
 
-We choose the Holzapfel-Gasser-Ogden (HGO) model [1] and included the Generalized Maxwell Model [2] for Viscoelasticity. The constitutive model is implemented through the ABAQUS user defined subroutine UMAT, written in FORTRAN-
+We choose the Holzapfel-Gasser-Ogden (HGO) model [1] and included the Generalized Maxwell Model [2] for Viscoelasticity. The constitutive model is implemented through the ABAQUS user defined subroutine UMAT, written in FORTRAN. 
 
 There are 7 material parameters to fit:
-C10, K11 and K12 --> HGO model
-BETAM1, TAUM1, BETAM2, TAUM2 --> Generalized Maxwell model
+- C10, K11 and K12 --> HGO model
+- BETAM1, TAUM1, BETAM2, TAUM2 --> Generalized Maxwell model
 
 We were able to get the following approximation running the genetic algorithm:
 
