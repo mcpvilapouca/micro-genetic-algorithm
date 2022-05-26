@@ -26,7 +26,7 @@ BETAM1, TAUM1, BETAM2, TAUM2 --> Generalized Maxwell model
 
 We were able to get the following approximation running the genetic algorithm:
 
-<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/95075305/170547318-c3af5aa2-1cff-4729-b364-155ec9f85645.png)" width="285" height="200">
+<a href="url"><img src="[http://url.to/image.png](https://user-images.githubusercontent.com/95075305/170547318-c3af5aa2-1cff-4729-b364-155ec9f85645.png)" align="left" height="48" width="48" ></a>
 
 
 ###### [1]: Holzapfel, G.A., Gasser, T.C., Ogden, R.W., 2000. A new constitutive framework for arterial wall mechanics and a comparative study of material models. J. Elast. Phys.Sci. Solids 61, 1–48. https://doi.org/10.1023/A:1010835316564 
