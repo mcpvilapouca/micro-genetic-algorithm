@@ -26,9 +26,8 @@ BETAM1, TAUM1, BETAM2, TAUM2 --> Generalized Maxwell model
 
 We were able to get the following approximation running the genetic algorithm:
 
-![test image size]<img src="[https://fullpath/assets/yourgif.gif](https://user-images.githubusercontent.com/95075305/170548904-d0bac609-148f-4e23-96ae-43555d584ed8.png)" width="285" height="200">
+![Results_micro_genetic1](https://user-images.githubusercontent.com/95075305/170549309-45adc7c6-0c1b-4478-8bb6-b5f151fbcad3.png)
 
-![Results_micro_genetic1](https://user-images.githubusercontent.com/95075305/170548904-d0bac609-148f-4e23-96ae-43555d584ed8.png)
 
 ###### [1]: Holzapfel, G.A., Gasser, T.C., Ogden, R.W., 2000. A new constitutive framework for arterial wall mechanics and a comparative study of material models. J. Elast. Phys.Sci. Solids 61, 1–48. https://doi.org/10.1023/A:1010835316564 
 ###### [2]: Holzapfel, G.A., Gasser, T.C., 2001. A viscoelastic model for fiber-reinforced composites at finite strains: continuum basis, computational aspects and applications.Comput. Methods Appl. Mech. Eng. 190, 4379–4403. https://doi.org/10.1016/S0045-7825(00)00323-6.
