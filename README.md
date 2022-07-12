@@ -2,7 +2,7 @@
 
 Micro-Genetic algorithm for the optimization of material parameters for constitutive models for finite element applications.
 
-<img src="https://user-images.githubusercontent.com/95075305/178476022-ba02fd1e-c326-44bd-9e1a-4e3e674f8a08.gif" width="600">
+<img src="https://user-images.githubusercontent.com/95075305/178476768-b901a4bd-1774-4d87-a1aa-a7d35c2a66cf.gif" width="500">
 
 It minimizes the least square differences between an experimental curve
 and numerical results from ABAQUS.
@@ -12,7 +12,6 @@ and numerical results from ABAQUS.
 - to run from the terminal in background use the following command:
 
  nohup matlab -r -nosplash -nodesktop -nojvm < Main.m > output.txt &
-
 
 
 ## **Results from the example:**
