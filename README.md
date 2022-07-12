@@ -1,6 +1,8 @@
 # Micro-genetic-algorithm
 
-Micro-Genetic algorithm for the optimization of constitutive models material parameters
+Micro-Genetic algorithm for the optimization of material parameters for constitutive models for finite element applications.
+
+<img src="https://user-images.githubusercontent.com/95075305/178476022-ba02fd1e-c326-44bd-9e1a-4e3e674f8a08.gif" width="600">
 
 It minimizes the least square differences between an experimental curve
 and numerical results from ABAQUS.
