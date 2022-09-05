@@ -5,7 +5,7 @@ function [xfinal,Fo,maxFm,restart,nger,meanFm] = micro_gen(obj,...
 %calculates the number of required bits for each parameter
 tot_bits=0;
 for i=1:nvar
-k(i)=round(log2(dim(i,1)*10^p));  %bits required for each var
+k(i)=round(log2(dim(i,1)*10^p(i,1)));  %bits required for each var
 tot_bits=tot_bits+k(i);           %total bits of an individual
 end
 

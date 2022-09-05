@@ -4,7 +4,7 @@ function [bin,int_bin] =real_to_bin(x1,dom,p,nvar,dim)
 for i=1:nvar
 %dim=dom(i,2)-dom(i,1)    %Domain dimension
 
-k(i)=round(log2(dim(i,1)*10^p));
+k(i)=round(log2(dim(i,1)*10^p(i,1)));
 
 int_bin(i,1)=round((x1(i,1)-dom(i,1))/(dim(i,1)/((2^k(i))-1)));
 
